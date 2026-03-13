@@ -27,6 +27,9 @@ jobs:
       - name: Build AAB
         run: flutter build appbundle --release
 
+      - name: List build outputs
+        run: ls -R build/app/outputs
+
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
